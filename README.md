@@ -39,14 +39,14 @@ smallNumber = smallerOne(num1, num2)
 ```
 
 ## Aufgabe
-Schreiben Sie eine kleine Python Funktion, welche
+Schreiben Sie eine kleine Python Funktion `isLeapYear(year)`, welche
 - die übergebene Jahreszahl prüft, ob es sich um ein Schaltjahr handelt
 - und True zurückgibt, wenn es ein Schaltjahr ist
 - und False zurückgibt, wenn es kein Schaltjahr ist
 
 Erweitern Sie main:
 - Der User wird nach einer Jahreszahl gefragt
-- Dann erhält der User eine Antwort
+- Dann erhält der User eine Antwort  
 Achtung: Die Funktionalität von main wird nicht automatisch getestet.
 
 ### Wann ist ein Jahr ein Schaltjahr?????
@@ -65,6 +65,6 @@ Achtung: Die Funktionalität von main wird nicht automatisch getestet.
 | 100  | kein Schaltjahr	|
 
 **Achtung**
-In der Funktion *isLeapYear(year)* sollte keine Ausgabe stehen. Die Funktin gibt ledigich einen Bool-Wert zurück.
+In der Funktion *isLeapYear(year)* sollte keine Ausgabe stehen. Die Funktion gibt lediglich einen Bool-Wert zurück.
 
 **WICHTIG:** Ändere **NICHT** die anderen Dateien
