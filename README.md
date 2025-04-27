@@ -38,33 +38,6 @@ num2 = float(input("Geben Zahl 2 ein: ")
 smallNumber = smallerOne(num1, num2)
 ```
 
-## Sichtbarkeit von Variablen
-Variablen im Quellcode sind nur in bestimmten Bereichen sichtbar.
-
-### Gobale Variablen
-Globale Variablen werden außerhalb von Funktionen definiert und sind im gesamten Programm zugänglich:
-```
-zahl = 10
-
-def drucke_zahl():
-    print(zahl)  # Zugriff auf die globale Variable
-
-drucke_zahl()  # Ausgabe: 10
-```
-
-### Lokale Variablen
-Lokale Variablen werden innerhalb von Funktionen definiert und sind nur innerhalb dieser Funktion zugänglich:
-```
-def berechne_summe():
-    a = 5  # Lokale Variable
-    b = 3  # Lokale Variable
-    summe = a + b
-    return summe
-
-print(berechne_summe())  # Ausgabe: 8
-# print(summe)  # Fehler: 'summe' ist außerhalb der Funktion nicht zugänglich
-```
-
 ## Aufgabe
 Schreiben Sie eine kleine Python Funktion `isLeapYear(year)`, welche
 - die übergebene Jahreszahl prüft, ob es sich um ein Schaltjahr handelt
