@@ -13,9 +13,15 @@
             margin-bottom: 20px;
         }
         .feedback {
-            color: green;
             font-weight: bold;
         }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+
     </style>
 </head>
 <body>
@@ -34,6 +40,39 @@
         <input type="radio" name="q2" value="local"> local<br>
         <p class="feedback" id="feedback2"></p>
     </div>
+    <div class="question">
+        <p>3. Was wird im folgenden Code ausgegeben?</p>
+        <pre>
+def äußere_funktion():
+    x = 10
+    def innere_funktion():
+        print(x)
+    innere_funktion()
+
+äußere_funktion()
+        </pre>
+        <input type="radio" name="q3" value="10"> 10<br>
+        <input type="radio" name="q3" value="Fehler"> Fehler<br>
+        <input type="radio" name="q3" value="Nichts"> Nichts<br>
+        <p class="feedback" id="feedback3"></p>
+    </div>
+    <div class="question">
+        <p>4. Was wird im folgenden Code ausgegeben?</p>
+        <pre>
+zahl = 10
+def ändere_zahl():
+    global zahl
+    zahl = 20
+
+ändere_zahl()
+print(zahl)
+        </pre>
+        <input type="radio" name="q4" value="10"> 10<br>
+        <input type="radio" name="q4" value="20"> 20<br>
+        <input type="radio" name="q4" value="Fehler"> Fehler<br>
+        <p class="feedback" id="feedback4"></p>
+    </div>
+
     <button onclick="checkAnswers()">Antworten überprüfen</button>
 
     <script>
