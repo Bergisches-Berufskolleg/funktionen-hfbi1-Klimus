@@ -1,10 +1,21 @@
 
 def isLeapYear(year):
-    # Hier müssen Sie erweitern ...
-    return False
+    # Prüft, ob ein Jahr ein Schaltjahr ist
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
 
 def main():
-    isLeapYear(2025)
-
+    year = 2025
+    result = isLeapYear(year)
+    print(f"{year} ist {'ein Schaltjahr' if result else 'kein Schaltjahr'}")
+    
 if __name__ == "__main__":
     main()
